@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>灵构 - 多模态提示词锻造台</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<aside class="sidebar">
+    <div class="brand-header">
+        <div class="brand-logo">✨</div>
+        <div class="brand-name">灵构</div>
+    </div>
+    <button class="new-chat-btn" id="newChatBtn">+ 新对话</button>
+    <!-- 知识库上传按钮可以直接删掉，下面给你说原因 -->
+    <div class="session-list" id="sessionList"></div>
+</aside>
+
+<main class="chat-container">
+    <header class="chat-header">
+        <h1 id="currentSessionName">新对话</h1>
+        <div>
+            <button class="header-btn" id="themeBtn">🌓</button>
+            <button class="header-btn" id="clearBtn">清空对话</button>
+            <button class="header-btn" id="logoutBtn">退出登录</button>
+        </div>
+    </header>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <!-- ✅ 输入框上方的三个按钮（视频/图片/文案） -->
+    <div class="bottom-tab-wrap">
+        <button class="tab-btn active" data-type="video">视频提示词</button>
+        <button class="tab-btn" data-type="image">图片提示词</button>
+        <button class="tab-btn" data-type="copy">文案提示词</button>
+    </div>
+
+    <!-- 已收集信息面板（保留，方便用户看进度） -->
+    <div class="info-panel" id="infoPanel" style="display:none;">
+        <div class="info-title">📋 已收集需求</div>
+        <div class="info-content" id="infoContent"></div>
+    </div>
+
+    <div class="input-area">
+        <button class="voice-switch-btn" id="voiceSwitch">🔊</button>
+        <input id="inputText" placeholder="请先回复视频核心类型+时长（如：3D国漫+15秒）" maxlength="300">
+        <button class="send-btn" id="sendBtn">➤</button>
+    </div>
+</main>
+
+<script src="/static/chat.js"></script>
+</body>
+</html>

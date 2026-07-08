@@ -1,0 +1,11 @@
+flask
+flask-login
+langchain
+langgraph
+langchain-zhipuai
+chromadb
+python-dotenv
+pypdf
+python-docx
+pyyaml
+zhipuai
