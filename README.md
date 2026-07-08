@@ -12,16 +12,8 @@
 2. 配置 .env：ZHIPU_API_KEY=你的密钥
 3. 运行：python ai_main.py
 
-##效果图：
-1.视频提示词：
-<img width="414" height="191" alt="image" src="https://github.com/user-attachments/assets/d3c6bc45-dcdd-4769-9dc3-f5682aaaac04" />
 
-<img width="414" height="226" alt="image" src="https://github.com/user-attachments/assets/9ba35f0f-b94e-43cc-9a85-08441c308898" />
 
-2.图片提示词：
-<img width="416" height="157" alt="image" src="https://github.com/user-attachments/assets/edcce052-830d-42d6-8f0c-21304f3160f8" />
 
-3.文案提示词:
-![Uploading image.png…]()
 
 
